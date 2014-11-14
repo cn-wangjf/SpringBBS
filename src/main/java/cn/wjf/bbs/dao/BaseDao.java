@@ -1,5 +1,6 @@
 package cn.wjf.bbs.dao;
 
+import cn.wjf.bbs.common.Page;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,4 +1,4 @@
-package cn.wjf.bbs.dao;
+package cn.wjf.bbs.common;
 
 import java.io.Serializable;
 import java.util.ArrayList;

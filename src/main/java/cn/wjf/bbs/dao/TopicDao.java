@@ -1,5 +1,6 @@
 package cn.wjf.bbs.dao;
 
+import cn.wjf.bbs.common.Page;
 import cn.wjf.bbs.domain.Topic;
 import org.springframework.stereotype.Repository;
 
