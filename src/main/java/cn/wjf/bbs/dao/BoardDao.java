@@ -1,6 +1,7 @@
 package cn.wjf.bbs.dao;
 
 import cn.wjf.bbs.domain.Board;
+import org.springframework.stereotype.Repository;
 
 import java.util.Iterator;
 
@@ -9,6 +10,7 @@ import java.util.Iterator;
  * Date: 14-11-13
  * Time: 上午10:31
  */
+@Repository
 public class BoardDao extends BaseDao<Board> {
 
     protected final String GET_BOARD_NUM = "select count(b.boardId) from Board b";

@@ -1,6 +1,7 @@
 package cn.wjf.bbs.dao;
 
 import cn.wjf.bbs.domain.User;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
@@ -9,6 +10,7 @@ import java.util.List;
  * Date: 14-11-14
  * Time: 上午11:52
  */
+@Repository
 public class UserDao extends BaseDao<User> {
 
     private final String GET_USER_BY_USERNAME = "from User u where u.userName = ?";
