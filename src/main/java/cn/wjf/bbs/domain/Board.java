@@ -8,11 +8,9 @@ import org.hibernate.annotations.CacheConcurrencyStrategy;
 import javax.persistence.*;
 
 /**
- * Created with IntelliJ IDEA.
- * User: admin
+ * User: wangjf
  * Date: 14-11-12
  * Time: 下午4:49
- * To change this template use File | Settings | File Templates.
  */
 @Entity
 @Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE) //不严格读写，不会对数据加锁

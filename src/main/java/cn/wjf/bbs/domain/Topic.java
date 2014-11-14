@@ -7,7 +7,6 @@ import javax.persistence.*;
 import java.util.Date;
 
 /**
- * Created with IntelliJ IDEA.
  * User: wangjf
  * Date: 14-11-12
  * Time: 下午5:31

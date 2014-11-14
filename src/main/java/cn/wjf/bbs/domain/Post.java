@@ -7,11 +7,9 @@ import javax.persistence.*;
 import java.util.Date;
 
 /**
- * Created with IntelliJ IDEA.
  * User: wangjf
  * Date: 14-11-12
  * Time: 下午5:24
- * To change this template use File | Settings | File Templates.
  */
 @Entity
 @Cache(usage = CacheConcurrencyStrategy.READ_WRITE)

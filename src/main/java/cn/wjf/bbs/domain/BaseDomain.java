@@ -5,7 +5,6 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 import java.io.Serializable;
 
 /**
- * Created with IntelliJ IDEA.
  * User: wangjf
  * Date: 14-11-12
  * Time: 下午4:31
