@@ -8,15 +8,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>用户注册</title>
 <script>
-   function mycheck(){
-      if(document.all("user.password").value != document.all("again").value){
-         alert("两次输入的密码不正确，请更正。");
-         return false;
-      }else
-      {
-         return true;
-      }
-   }
+    function mycheck() {
+        if (document.all("user.password").value != document.all("again").value) {
+            alert("两次输入的密码不正确，请更正。");
+            return false;
+        } else {
+            return true;
+        }
+    }
 </script>
 </head>
 <body>

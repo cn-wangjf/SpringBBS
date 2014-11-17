@@ -36,6 +36,7 @@
         <filter-name>forumFilter</filter-name>
         <url-pattern>*.jsp</url-pattern>
     </filter-mapping>
+    <!-- Spring 字符过滤器 -->
     <filter>
         <filter-name>encodingFilter</filter-name>
         <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
