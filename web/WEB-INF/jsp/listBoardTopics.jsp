@@ -27,7 +27,6 @@
 					<a
 						href="<c:url value="/board/addTopicPage-${board.boardId}.html"/>">发表新话题</a>
 				</td>
-
 			</tr>
 			<tr>
 			   <c:if test="${USER_CONTEXT.userType == 2 || isboardManager}">
@@ -78,7 +77,7 @@
 					<td>
 						<a  href="<c:url value="/board/listTopicPosts-${topic.topicId}.html"/>">
 							<c:if test="${topic.digest > 0}">
-							  <font color=red>★</font>
+							  <span style="color: red">★</span>
 							</c:if>
 							${topic.topicTitle} 
 							</a>
@@ -132,7 +131,6 @@
 	               var ids = getSelectedTopicIds();
 	               if(ids){
 	                  var url = "<c:url value="/board/removeTopic.html"/>?topicIds="+ids+"&boardId=${board.boardId}";
-	                  //alert(url);
 	                  location.href = url;
 	               }
 	            }

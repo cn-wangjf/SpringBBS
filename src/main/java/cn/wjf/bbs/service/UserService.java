@@ -1,5 +1,6 @@
 package cn.wjf.bbs.service;
 
+import cn.wjf.bbs.common.EncryptionUtil;
 import cn.wjf.bbs.dao.LoginLogDao;
 import cn.wjf.bbs.dao.UserDao;
 import cn.wjf.bbs.domain.LoginLog;
@@ -38,6 +39,7 @@ public class UserService {
         }else{
             user.setCredit(100);
             user.setUserType(1);
+            user.setPassword(EncryptionUtil.getMd5(user.getPassword()));
             userDao.save(user);
         }
     }

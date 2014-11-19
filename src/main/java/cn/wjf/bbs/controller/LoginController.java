@@ -1,6 +1,7 @@
 package cn.wjf.bbs.controller;
 
 import cn.wjf.bbs.common.CommonConstant;
+import cn.wjf.bbs.common.EncryptionUtil;
 import cn.wjf.bbs.domain.User;
 import cn.wjf.bbs.service.UserService;
 import org.apache.commons.lang3.StringUtils;
@@ -39,7 +40,7 @@ public class LoginController extends BaseController {
         mav.setViewName("forward:/login.jsp");
         if (dbUser == null) {
             mav.addObject("errorMsg", "用户名不存在");
-        } else if (!dbUser.getPassword().equals(user.getPassword())) {
+        } else if (!dbUser.getPassword().equals(EncryptionUtil.getMd5(user.getPassword()))) {
             mav.addObject("errorMsg", "用户密码不正确");
         } else if (dbUser.getLocked() == User.USER_LOCK) {
             mav.addObject("errorMsg", "用户已经被锁定，不能登录。");

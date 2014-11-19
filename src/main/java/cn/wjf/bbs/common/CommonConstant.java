@@ -21,5 +21,5 @@ public class CommonConstant {
     /**
      * 每页的记录数
      */
-    public static final int PAGE_SIZE = 5;
+    public static final int PAGE_SIZE = 1;
 }
